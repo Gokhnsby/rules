@@ -26,10 +26,10 @@ rule Winnti_trojan
 
 
    strings:
-	$s0 = "\system32\dpapi.dll"
+	$s0 = "\system32\\dpapi.dll"
 	$s1 = ".dat"
   	$s2 = "system32\\dpapi.dll"
-  	$s3 = "windows\system32\*.dat"
+  	$s3 = "windows\\system32\*.dat"
 
     condition:
         all of them
